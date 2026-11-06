@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f6f0"><meta name="description" content="原创限时练习，包含认知三套、管理简述两套。支持手机按模块练习、暂停、自动保存和复盘。">
+<title>周末练习册 · 认知与管理</title>
+<style>:root{color-scheme:light;--bg:#f7f6f0;--paper:#fffefa;--ink:#1d302b;--muted:#52645b;--line:#cdd7ce;--green:#174c3b;--tint:#e7efe6;--rust:#864825;--warm:#f8edde;--serif:"Songti SC","STSong","Noto Serif CJK SC",Georgia,serif;--sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.65}*{box-sizing:border-box}body{margin:0}button,a,textarea,input{font:inherit}button,a{touch-action:manipulation}button{cursor:pointer;color:inherit}a{color:var(--green)}button:focus-visible,a:focus-visible,summary:focus-visible,textarea:focus-visible{outline:3px solid #cb792e;outline-offset:3px}.mast{border-bottom:1px solid var(--line);background:var(--paper)}.mast-in{max-width:1020px;padding:13px 28px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.mast a{text-decoration:none}.mast-in>a:first-child{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:20px;font-weight:700;letter-spacing:.03em}.emblem{height:30px;width:29px;border-radius:4px;background:var(--green);color:white;display:grid;place-items:center;font:24px/1 Georgia}.catalog{font-size:13px}.mast a,.breadcrumb a,summary{min-height:36px;display:inline-flex;align-items:center}main{max-width:1020px;margin:auto;padding:36px 28px 72px}h1,h2,h3,p{margin:0}h1,h2{font-family:var(--serif);line-height:1.26}h1{font-size:clamp(32px,5vw,52px);letter-spacing:-.04em}h2{font-size:clamp(23px,3.2vw,30px)}h3{font-size:18px;line-height:1.5}.intro{max-width:740px;color:var(--muted);margin-top:12px}.book-grid{display:grid;grid-template-columns:1.08fr 1fr;gap:24px;margin:30px 0 18px}.shelf{border-top:4px solid var(--green);background:var(--paper);border-radius:3px 3px 10px 10px;padding:22px;box-shadow:0 1px 2px #152e2411}.shelf.manage{border-color:var(--rust)}.shelf p,.sub,.foot,.help{font-size:14px;color:var(--muted)}.shelf p{margin:5px 0 17px}.book-link,.mode{display:flex;align-items:center;width:100%;text-align:left;gap:14px;background:transparent;border:0;border-top:1px solid var(--line);padding:14px 1px;text-decoration:none;color:var(--ink)}.book-link:hover,.mode:hover{background:#eff3eb}.book-id{font:italic 31px Georgia,serif;color:var(--green);min-width:32px;text-align:center}.manage .book-id{color:var(--rust)}.details-col{flex:1;min-width:0}.details-col strong,.details-col small{display:block}.details-col small{font-size:13px;color:var(--muted)}.arrow{font-size:22px;color:var(--muted)}.foot,.help{line-height:1.7}.breadcrumb{font-size:14px;color:var(--muted);margin-bottom:14px}.breadcrumb a{text-decoration:none}.paper,.panel{padding:clamp(16px,3vw,30px);background:var(--paper);border:1px solid var(--line);border-radius:10px}.paper{margin-top:15px}.narrow{max-width:800px;margin:auto}.modes{margin:24px 0 12px}.mode{font-size:16px}.mode .marker{width:46px;text-align:center;color:var(--green);font:italic 23px Georgia,serif}.mode .badge,.ts{font-size:13px;color:var(--muted)}.pbtn,.btn{border-radius:6px;padding:9px 16px;min-height:44px;font-weight:600;display:inline-flex;justify-content:center;align-items:center;gap:7px;text-decoration:none}.btn{border:1px solid var(--line);background:var(--paper);color:var(--ink)}.pbtn{background:var(--green);color:white;border:1px solid var(--green)}.btn:hover{background:var(--tint)}.pbtn:hover{background:#0e392b}.btn:disabled,.pbtn:disabled{opacity:.55;cursor:default}.danger{color:#803a26}.actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:18px}.actions.end{justify-content:space-between}.sbar{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:10px;background:#f7f6f0f5;border-bottom:1px solid var(--line);padding:8px 0;flex-wrap:wrap}.sbar strong{display:block}.timerbox{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.timer{font:600 18px/1.4 ui-monospace,monospace;font-variant-numeric:tabular-nums}.timer.warn{color:#a53c19}.timegrp small{display:block;color:var(--muted);font-size:11px;line-height:1.4}.strip{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:14px}.track{height:4px;background:var(--line);margin:10px 0 16px;border-radius:2px}.track i{display:block;height:100%;background:var(--green)}.context{line-height:1.85;margin:12px 0 14px;color:#35463e}.qtitle{font:650 clamp(19px,3vw,23px)/1.55 var(--sans);margin:12px 0}.opts{display:grid;gap:8px;margin-top:16px}.opt{display:flex;width:100%;gap:12px;align-items:center;text-align:left;border:1px solid var(--line);background:white;border-radius:7px;padding:11px 14px;min-height:48px}.opt[aria-pressed=true]{border:2px solid var(--green);padding:10px 13px;background:var(--tint)}.letter{font:bold 14px ui-monospace,monospace;color:var(--muted)}.opt.fig{justify-content:flex-start}.opts.figopts{grid-template-columns:repeat(4,minmax(0,1fr))}.figopts .opt{padding:5px;gap:1px}.figopts .opt[aria-pressed=true]{padding:4px}.figopts svg{width:68px;max-width:80%;height:auto}.graph{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));gap:4px;background:#f0f3eb;padding:8px;border-radius:7px;width:min(100%,calc(var(--cols)*88px + 16px));margin:12px auto}.tile{display:flex;align-items:center;justify-content:center;min-width:0;background:var(--paper);border-radius:3px}.tile svg{width:100%;max-width:80px;height:auto;display:block}.tile.net svg{max-width:190px}.graph.net{width:min(100%,210px)}.qmark{font:italic 31px var(--serif);color:var(--green)}table{border-collapse:collapse;width:100%;font-size:14px;margin:13px 0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}td,th{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left}th{background:var(--tint);color:var(--green)}textarea{display:block;width:100%;min-height:220px;padding:13px;border-radius:6px;border:1px solid #9aaca1;background:white;resize:vertical;font-size:16px;line-height:1.7;color:var(--ink)}.wcount{text-align:right;color:var(--muted);font-size:13px}.wcount.over{color:#9a311d}.notice{padding:10px 14px;background:var(--warm);border-radius:5px;margin:10px 0;color:#69401d}.review-row{display:block;background:var(--paper);border-bottom:1px solid var(--line);padding:9px 4px}.review-row summary{display:list-item;cursor:pointer;font-weight:600;min-height:40px;padding:7px 0}.review-row p,.review-row ul,.review-row table{margin:8px 0}.review-row ul{padding-left:23px}.review-body{padding:4px 12px 16px}.review-body .help{margin-top:12px}.wa{color:#94472c}.ok{color:var(--green)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.filters [aria-pressed=true]{background:var(--green);color:white}.cell-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.cell-list span{background:var(--tint);padding:3px 10px;border-radius:4px;font-size:14px}.check{display:flex;gap:8px;align-items:flex-start;padding:7px 0}.check input{margin-top:7px}.preserve{white-space:pre-wrap;overflow-wrap:anywhere}.passage{background:#f0f3eb;padding:13px;border-radius:5px}.session-head{font-size:14px}.savedraft{font-size:13px;color:var(--muted)}#storage-warning{position:sticky;bottom:0;background:var(--warm);color:#502b16;padding:6px 12px}.pausebox{margin:25px auto}.pausebox h2{margin-bottom:8px}.muted{color:var(--muted)}button,summary,label{ -webkit-tap-highlight-color:transparent }@media(max-width:650px){main{padding:20px 13px 50px}.mast-in{padding:7px 14px}.book-grid{grid-template-columns:1fr;gap:16px;margin:20px 0}.shelf{padding:16px}.book-link{padding:11px 0}.paper,.panel{padding:15px}.timegrp small{font-size:11px}.sbar{align-items:center}.sbar .btn{padding:5px 10px}.timerbox{gap:6px}.sbar .session-head{max-width:95px;font-size:13px}.figopts .opt{flex-direction:column;align-items:center}.figopts svg{max-width:100%}.figopts .letter{align-self:flex-start}.actions{gap:6px}.opts{gap:7px}td,th{padding:6px 4px}.mode{gap:8px}.mode .marker{width:36px}.timer{font-size:16px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body><header class="mast"><div class="mast-in"><a href="#" aria-label="返回练习目录"><span class="emblem" aria-hidden="true">▤</span>周末练习册</a><a class="catalog" href="#">练习目录</a></div></header><main id="app"></main>
+<p id="storage-warning" role="alert" hidden>当前浏览器限制本机存储，退出可能丢失进度。请在允许网站存储的普通窗口练习。</p>
+<noscript>请启用 JavaScript 以运行练习计时器。</noscript>
+<script>const BANK={"c-a":{"v":[{"context":"一次服务改版允许客户自助取消订单。上线首月，电话咨询少了三成，但有更多用户在帮助页反复搜索“退款进度”。运营认为客服负担已经下降。","prompt":"最稳妥的判断是哪项？","why":"电话量只覆盖一个渠道。搜索增加提示负担可能转移，材料没有给出总工时、订单量或退款时长。","id":"Av01","section":"v","limit":60,"opts":["搜索量上升，表明用户实际等退款的时间更长","帮助页承接了原来的咨询，因此用户更快获得答复","电话需求下降，整体求助成本还需核实","咨询次数下降三成，可以据此同步缩减三成排班"],"correct":2},{"context":"只有完成校准的传感器才能进入仓库。进入仓库的传感器中，有一部分还没有分配给产线。","prompt":"哪项一定成立？","why":"从那批“已入库但未分配”的设备出发，入库必然意味着已校准。反方向的推理没有依据。","id":"Av02","section":"v","limit":75,"opts":["凡是校准过的传感器都已入库","未分配给产线的传感器都在仓库","已分配给产线的传感器都曾在仓库","有些已经校准的传感器还没有分配给产线"],"correct":3},{"context":"市图书馆延长晚间开放后，夜间进馆人数增加。馆方据此推测，新安排让原本无法到馆的读者也能使用服务。","prompt":"哪条新增证据最能支持馆方的解释？","why":"该解释关注新增人群及其原有障碍。第一项同时对两者提供证据；原有读者换时段反而是竞争性解释。","id":"Av03","section":"v","limit":90,"opts":["晚间新增座位利用率超过原有座位，持续三周","原有读者中，有较高比例更喜欢晚间借阅","周末的借阅量也随之上升，且读者评价良好","新读者多数此前受下班时间限制无法到馆"],"correct":3},{"context":"一个工作组把复盘会上的发言次数用作协作指标。几个月后，发言更频繁了，但关键分歧仍留在会后解决。组长决定同时记录哪些分歧在会上得到澄清。","prompt":"组长调整记录方式主要想解决什么问题？","why":"记录分歧是否澄清，是给频次增加结果证据。材料没有主张取消会后协作，也没有证明频繁发言有害。","id":"Av04","section":"v","limit":60,"opts":["用新的记录方式估算缩短会议能节省多少工时","降低发言频次，给沉默成员更多贡献机会","区分参与讨论和解决分歧","判断哪些分歧应从会议中移交给书面流程"],"correct":2},{"context":"甲、乙两个版本同时受测，用户可自行选择版本。甲的满意度更高。研究者认为甲的界面能提升所有用户的满意度。","prompt":"下列哪项最削弱这个结论？","why":"自选版本导致用户起点不同，组间满意度差异未必由界面引起；“所有用户”更缺少支持。","id":"Av05","section":"v","limit":75,"opts":["参与者先试用一天再填问卷，两版流程相同","老用户原本更满意，且大多主动选甲","两个版本的平均使用时间相同，样本量略有不同","许多选甲的人在开放意见里提到界面清晰"],"correct":1},{"context":"三个展位从左到右排成一行，分别是陶瓷、织物、木作。木作不在最右边，陶瓷紧挨在木作的右边。","prompt":"哪项一定为真？","why":"可能的次序有木陶织、织木陶。两种次序中陶瓷左边都有木作，其他说法各有反例。","id":"Av06","section":"v","limit":90,"opts":["陶瓷不在最左边","织物一定在最右边","木作一定在最左边","织物一定挨着木作"],"correct":0},{"context":"一项调查发现，更多骑行者选择有树荫的长路线。作者推测，在夏日中午，遮阴带来的舒适比少走几百米更重要。","prompt":"哪项最符合作者推测的适用范围？","why":"作者限定了时间、交通方式和小幅距离差异。观察到的选择不能扩展为全年、全城或普遍偏好。","id":"Av07","section":"v","limit":60,"opts":["增加树荫是全年改善骑行通勤效率的最佳投资","夏日中午，树荫可能值得多骑一小段","只要骑行时间不变，多数人会改用最长路线","夏天选择短路线的人更重视速度而非沿途舒适"],"correct":1},{"context":"旧流程要求所有申请走同一审批链。新流程让低风险申请直接通过，把专家时间集中到高风险申请上。改革要在缩短等待的同时维持审查质量。","prompt":"上述改革最依赖哪项前提？","why":"如果无法在入口识别风险，分流会把重要申请直接放过。类别数量、专家速度相同和零错误都不是必要条件。","id":"Av08","section":"v","limit":75,"opts":["入口能可靠识别申请风险","低风险申请中，每一笔都具备完全相同的材料","高风险申请应在数量上超过低风险申请的一半","分流前后，每位专家的平均处理速度都能保持相同"],"correct":0},{"context":"社区服务站把预约入口从一个增加到三个。预约记录数变多，但同一个人可以从不同入口重复预约。","prompt":"若要判断服务覆盖是否扩大，应优先比较什么？","why":"覆盖问的是不同的人是否实际获得服务，去重且看履约是关键。记录、提醒和速度回答的是别的问题。","id":"Av09","section":"v","limit":90,"opts":["按相同口径去重后的实际服务人数","三个入口各自收到的预约记录总和","当月发布的预约提醒数量","最快入口的平均提交时间"],"correct":0},{"context":"初稿说：“试点让全部门的差错率下降。”已知只有两个自愿参加的小组，开展前后对比，未设对照组。","prompt":"怎样改写最符合证据？","why":"前后数据支持描述变化，不足以单独识别原因。不能把两个自愿组的表现直接外推到整个部门。","id":"Av10","section":"v","limit":60,"opts":["试点已证明这两个小组因流程而改善，只是样本不足以外推","两组差错率随后下降，原因尚待检验","两组在试点期间表现一致，可以据此估计部门平均效果","考虑到没有对照组，应把下降仅归因于人员能力提高"],"correct":1}],"d":[{"context":"两条生产线同周抽检，每件产品只检查一次。","table":[["产线","抽检件数","合格率"],["甲","200","96%"],["乙","800","91%"]],"prompt":"两条线合并后的合格率是多少？","why":"(200×96%＋800×91%) ÷ 1,000 = 920 ÷ 1,000 = 92%。按抽检件数加权。","id":"Ad01","section":"d","limit":75,"opts":["93.5%","92%","91.5%","94%"],"correct":1},{"context":"订阅产品按季度统计，收入单位为万元。","table":[["指标","上季","本季"],["付费人数","2,000","2,400"],["总收入","80","90"]],"prompt":"本季每名付费用户平均收入比上季怎样变化？","why":"上季每人 400 元，本季 375 元。变化率为 (375−400) ÷ 400 = −6.25%。","id":"Ad02","section":"d","limit":90,"opts":["下降 6.25%","上升 6.25%","下降 7.5%","上升 12.5%"],"correct":0},{"context":"同一批访问依次经过三个环节，无重复用户。","table":[["环节","数据"],["到达页面","80,000 人"],["到达后注册","15%"],["注册后试用","25%"],["试用后付费","12%"]],"prompt":"最终有多少人付费？","why":"80,000 × 15% × 25% × 12% = 360。每一步的分母都是上一环节。","id":"Ad03","section":"d","limit":60,"opts":["360 人","3,000 人","1,440 人","288 人"],"correct":0},{"context":"甲乙两城的日订单如下。","table":[["城市","周一","周二"],["甲","1,200","1,380"],["乙","800","820"]],"prompt":"两城合计净增的订单中，甲贡献了多少？","why":"甲净增 180，乙净增 20，总净增 200。贡献率 = 180 ÷ 200 = 90%。","id":"Ad04","section":"d","limit":75,"opts":["15%","62.7%","81.8%","90%"],"correct":3},{"context":"工厂一周有 5 个工作日，每人每天工作 8 小时。","table":[["项目","数值"],["人数","6 人"],["全部工作时间中可投入生产","75%"],["每件工时","1.5 小时"]],"prompt":"不加班、不计其他损耗，该周最多生产多少件？","why":"6 × 5 × 8 × 75% = 180 个有效工时，再除以 1.5，得 120 件。","id":"Ad05","section":"d","limit":90,"opts":["160 件","180 件","120 件","135 件"],"correct":2},{"context":"商店一批货共 1,000 件，均已售出。全部收入在扣除退货后确认。","table":[["项目","数据"],["每件售价","120 元"],["已全额退货","50 件"],["单件采购成本","72 元"]],"prompt":"只问扣除退款后的销售收入，金额是多少？","why":"净销售收入 = (1,000−50) × 120 = 114,000 元。采购成本影响利润，不影响此处收入。","id":"Ad06","section":"d","limit":60,"opts":["120,000 元","45,600 元","114,000 元","110,400 元"],"correct":2},{"context":"两组记录观察同样长的 7 天。","table":[["组别","收到邀请","完成首单"],["对照","2,000 人","180 人"],["试点","1,500 人","165 人"]],"prompt":"试点相对对照的首单率提高了多少个百分点？","why":"试点 165/1,500 = 11%，对照 180/2,000 = 9%，相减得 2 个百分点；相对提升才是约 22.2%。","id":"Ad07","section":"d","limit":75,"opts":["1.5 个百分点","0.2 个百分点","22.2 个百分点","2 个百分点"],"correct":3},{"context":"两个方案的包月费用及按件收费如下。","table":[["方案","固定费/月","每件服务费"],["甲","1,800 元","3 元"],["乙","600 元","7 元"]],"prompt":"当服务量为整数时，甲第一次严格比乙便宜是在多少件？","why":"1,800＋3x < 600＋7x，解得 x > 300。300 件时两者恰好相等，严格更便宜从 301 件起。","id":"Ad08","section":"d","limit":90,"opts":["301 件","299 件","300 件","401 件"],"correct":0},{"context":"某业务年初库存 480 件。次月末盘点前的收发均已记录。","table":[["月份","到货","发货"],["一月","220","310"],["二月","160","190"]],"prompt":"二月末库存可覆盖多少天？假设之后每天消耗 15 件。","why":"期末库存 480＋220−310＋160−190 = 360 件，360 ÷ 15 = 24 天。","id":"Ad09","section":"d","limit":60,"opts":["26 天","24 天","32 天","20 天"],"correct":1},{"context":"服务中心本周已处理工单，时长已按升序排列。","table":[["处理时长","工单数"],["1 天","4"],["2 天","7"],["3 天","6"],["4 天","3"]],"prompt":"这 20 单处理时长的中位数是多少？","why":"第 10、11 单都落在第 5～11 单的两天档，中位数是 2 天。","id":"Ad10","section":"d","limit":75,"opts":["3 天","2 天","2.4 天","2.5 天"],"correct":1}],"f":[{"prompt":"按照箭头变化的规律，问号处应是哪一个？","cols":5,"frames":[["arrow",0],["arrow",2],["arrow",4],["arrow",6],null],"why":"箭头每次顺时针转 90°：上、右、下、左，下一步回到上。","id":"Af01","section":"f","limit":75,"opts":[["arrow",3],["arrow",0],["arrow",2],["arrow",6]],"correct":1},{"prompt":"黑格沿着方框边缘移动，下一幅是什么？","cols":6,"frames":[["grid",3,"0"],["grid",3,"1"],["grid",3,"2"],["grid",3,"5"],["grid",3,"8"],null],"why":"黑格沿外圈顺时针每次前进一格。到达右下角后，下一格是下边中间。","id":"Af02","section":"f","limit":90,"opts":[["grid",3,"7"],["grid",3,"4"],["grid",3,"3"],["grid",3,"6"]],"correct":0},{"prompt":"观察每一行，补上第三行的最后一格。","cols":3,"frames":[["grid",3,"01"],["grid",3,"58"],["grid",3,"0158"],["grid",3,"36"],["grid",3,"24"],["grid",3,"2346"],["grid",3,"04"],["grid",3,"78"],null],"why":"同行第三幅保留前两幅的全部黑格。最后一行应保留左上、中心以及底行中间和右侧。","id":"Af03","section":"f","limit":60,"opts":[["grid",3,"48"],["grid",3,"078"],["grid",3,"02478"],["grid",3,"0478"]],"correct":3},{"prompt":"图形的形状与填充各有规律，选下一幅。","cols":5,"frames":[["poly",3,1],["poly",4,0],["poly",5,1],["poly",3,0],null],"why":"边数按 3、4、5 循环，实心和空心交替。第五幅是实心四边形。","id":"Af04","section":"f","limit":75,"opts":[["poly",4,1],["poly",5,0],["poly",4,0],["poly",3,1]],"correct":0},{"prompt":"按左右两端各自的变化，补全骨牌。","cols":5,"frames":[["dom",1,5],["dom",2,4],["dom",3,3],["dom",4,2],null],"why":"左端依次加 1，右端依次减 1，所以最后是左 5、右 1。","id":"Af05","section":"f","limit":90,"opts":[["dom",5,3],["dom",1,5],["dom",5,1],["dom",4,1]],"correct":2},{"prompt":"同一行左图如何变成右图？按相同变换补全。","cols":2,"frames":[["grid",3,"013"],["grid",3,"125"],["grid",3,"258"],["grid",3,"036"],["grid",3,"047"],null],"why":"沿竖直中线左右翻转。左上移到右上，中间列的中心和下中保持原位。","id":"Af06","section":"f","limit":60,"opts":[["grid",3,"037"],["grid",3,"245"],["grid",3,"247"],["grid",3,"146"]],"correct":2},{"prompt":"三条柱子的次序按固定方式改变，下一组是什么？","cols":5,"frames":[["bars",[1,2,3]],["bars",[2,3,1]],["bars",[3,1,2]],["bars",[1,2,3]],null],"why":"每次把最左柱移到最右，其余左移。由低、中、高变为中、高、低。","id":"Af07","section":"f","limit":75,"opts":[["bars",[2,3,1]],["bars",[3,2,1]],["bars",[3,1,2]],["bars",[1,3,2]]],"correct":0},{"prompt":"根据前两行示范，选出最后一幅。","cols":3,"frames":[["grid",3,"014"],["grid",3,"145"],["grid",3,"14"],["grid",3,"256"],["grid",3,"067"],["grid",3,"6"],["grid",3,"1378"],["grid",3,"4578"],null],"why":"第三幅只涂两图相同位置都黑的格子。末行共同点是底行中、右两格。","id":"Af08","section":"f","limit":90,"opts":[["grid",3,"18"],["grid",3,"78"],["grid",3,"45"],["grid",3,"134578"]],"correct":1},{"prompt":"圆盘上有指针和圆点，各走各的步数。接下来如何？","cols":5,"frames":[["dial",0,4],["dial",2,3],["dial",4,2],["dial",6,1],null],"why":"按八方位计，指针顺时针走两格，外圈圆点逆时针走一格，下一幅两者都指向正上。","id":"Af09","section":"f","limit":60,"opts":[["dial",0,2],["dial",0,0],["dial",4,0],["dial",6,4]],"correct":1},{"prompt":"每行都遵循同一种形状排列规律。问号处是什么？","cols":3,"frames":[["poly",3,1],["poly",4,1],["poly",0,1],["poly",4,1],["poly",0,1],["poly",3,1],["poly",0,1],["poly",3,1],null],"why":"每行由上一行向左循环移动一位。第三行是圆、三角、四边形。","id":"Af10","section":"f","limit":75,"opts":[["poly",3,1],["poly",0,1],["poly",5,1],["poly",4,1]],"correct":3}]},"c-b":{"v":[{"context":"两家门店都采用“畅销品优先补货”。一周后缺货投诉下降，但被登记为缺货的商品种类更多了。","prompt":"哪项最能同时解释这两个现象？","why":"投诉受每种商品的顾客人数影响，品种数则按品种计。少数畅销品和众多长尾品的变化可以方向相反。","id":"Bv01","section":"v","limit":60,"opts":["畅销品补货变快，因此全店缺货商品种类必然减少","畅销款恢复供应，更多冷门品种仍缺货","投诉量只由缺货的品种数决定，与需求人数无关","每款商品引起投诉的概率相同，只是热门商品价格更高"],"correct":1},{"context":"内部规则规定，只有完成演练且取得值班许可的人可以独立值班。小周完成了演练，但没有独立值班。","prompt":"仅据上述信息可以断定什么？","why":"规定的是独立值班的必要条件。有资格也可能尚未排班，由没有值班不能倒推出没有许可。","id":"Bv02","section":"v","limit":75,"opts":["小周一定没有取得值班许可","只要小周取得许可，就已经独立值过班","还不能确定小周是否取得值班许可","独立值班的人未必完成过演练"],"correct":2},{"context":"一支团队把每周新增意向客户作为目标。后来新增意向增长，签约却没增长。销售建议取消意向指标。运营则说要先看从首次接触到签约的时间。","prompt":"运营的关键考虑是什么？","why":"转化有滞后。应比较成熟程度相同的客户批次，才能区分低质量意向和签约尚未发生。","id":"Bv03","section":"v","limit":90,"opts":["各批客户只要按签约日期分组，就能直接比较线索质量","签约滞后说明新增意向足以替代签约量衡量销售绩效","新意向可能还没走完签约周期","签约所需时间越长，可以归功于本期团队的签约应该越多"],"correct":2},{"context":"一个团队在评估远程协作。负责人说：“我们收到的满意反馈几乎全来自远程办公者，所以远程办公者更满意。”","prompt":"要比较两种办公方式的满意比例，最缺什么？","why":"已知接近“满意反馈中谁多”。要比较“各组有多大比例满意”，须知道组内分母，还需防止非回应偏差。","id":"Bv04","section":"v","limit":60,"opts":["两种办公方式的总人数，以及远程员工的平均工龄","各组调查基数、满意人数及回应情况","每组最高满意度评分，以及给满分的人在公司任职多久","满意留言里不同岗位的人数，以及每人平均写了多少字"],"correct":1},{"context":"规则：若方案甲入选，乙也必须入选；乙、丙不能同时入选。本轮丙已入选。","prompt":"哪种结论必然成立？","why":"丙入选排除乙；若甲入选会强制乙入选，故甲也不可能入选。规则与评审先后无关。","id":"Bv05","section":"v","limit":75,"opts":["甲可能入选，只要它晚于丙评审","只有甲一定没有入选，乙仍可能入选","乙没有入选，但甲一定入选","甲、乙都没有入选"],"correct":3},{"context":"某团队给复杂决策规定了截止时间。会议平均时长缩短了，但大量议题后来被重新打开。作者认为，压缩第一次会议的时间可能低估了总成本。","prompt":"哪项最有助于检验这个判断？","why":"要把重新讨论与返工纳入同一议题的完整周期，才能判断节省的第一次会议时间是否被抵消。","id":"Bv06","section":"v","limit":90,"opts":["按议题累计到最终执行的工时和返工","按参会人员的平均级别，折算第一次会议的人工成本","按每月解决议题的数量，给各部门的首次会议效率排名","按会议持续时间分档，比较新规前后超时会议的占比"],"correct":0},{"context":"甲主张用统一模板，让不同小组更易交换信息。乙主张保留自由文本，因为模板列出的选项可能遗漏异常线索。","prompt":"哪种做法最能同时回应双方的具体顾虑？","why":"共用字段支持比较和交换，自由描述容纳未知异常。其余选项只能满足一方或破坏一致性。","id":"Bv07","section":"v","limit":60,"opts":["保留各组自定义字段，交换时只检查模板是否填写完整","增加一组选填分类，让成员将未列出的异常归入最接近的类别","把自由文本和结构化模板分月使用，月底按提交数量比较","共用核心字段，另留异常描述栏"],"correct":3},{"context":"培训后，通过结业考核的人在客户沟通中平均得分更高。有人据此说，课程本身提升了沟通能力。","prompt":"以下哪项证据对区分培训效果与原有差异最有帮助？","why":"原有能力可能同时影响考核和沟通。随机分组、共同测量能削弱这种选择解释。","id":"Bv08","section":"v","limit":75,"opts":["把上过课的人按结业考核排名分组，再比较两组的实际沟通成绩","在客户满意度较高的团队访谈受训者，列出课程中最受欢迎的技巧","相近起点随机分组，延后组与受训组同期受测","请同一名主管复核所有通过者，分析其课程签到频次与表现的关系"],"correct":2},{"context":"服务站要求把“确有需求但暂不具备资格”的申请单独记录。此前此类申请和资料不全的申请都作为失败处理。","prompt":"单独记录最直接改善了哪种判断？","why":"分类改善了对失败原因的识别，是否改规则、能否获批和准备成本仍需另行判断。","id":"Bv09","section":"v","limit":90,"opts":["区分资格缺口与可补资料造成的失败","证明主动提供补件辅导后，可获批人数将按相同比例提高","估算放宽资格后，所有被拒者中有多少人一定会再次申请","衡量额外的资料准备时间给全部获批申请人带来了多少负担"],"correct":0},{"context":"四次演示依次举行，甲必须早于丙，乙必须紧跟在丙之后，丁不能排最后。","prompt":"哪一种次序符合所有条件？","why":"把丙乙视作连续的一组，再检查甲在其前、丁不在队尾。其余三个排列分别违反紧邻、先后或末位限制。","id":"Bv10","section":"v","limit":60,"opts":["甲、丙、丁、乙","丙、乙、丁、甲","甲、丙、乙、丁","丁、甲、丙、乙"],"correct":3}],"d":[{"context":"某商品先涨价，再在涨后价格上打折。","table":[["环节","规则"],["原价","250 元"],["涨价","20%"],["促销","打八五折"]],"prompt":"最终成交价与原价相比怎样变化？","why":"250 × 1.20 × 0.85 = 255 元，较 250 元上涨 2%。两次变动的基数不同。","id":"Bd01","section":"d","limit":75,"opts":["上涨 2%","保持不变","上涨 5%","下降 2%"],"correct":0},{"context":"呼叫中心对比两周的解决率。","table":[["工单","上周件数 / 解决率","本周件数 / 解决率"],["简单","800 / 90%","200 / 95%"],["复杂","200 / 50%","800 / 55%"]],"prompt":"哪项描述准确？","why":"上周 (720＋100)/1,000 = 82%，本周 (190＋440)/1,000 = 63%。本周复杂工单占比从 20% 升至 80%。","id":"Bd02","section":"d","limit":90,"opts":["总体从 70% 上升到 75%","总体下降说明至少一类解决率下降","两类解决率均提高，总体必然提高","两类解决率都提高，但总体从 82% 降至 63%"],"correct":3},{"context":"广告团队按“增量毛利减投放费”计算项目贡献。","table":[["项目","新增订单","每单毛利","投放费"],["甲","500","80 元","2 万元"],["乙","800","55 元","3 万元"]],"prompt":"甲的项目贡献比乙多多少？","why":"甲为 500 × 80 − 20,000 = 20,000 元；乙为 800 × 55 − 30,000 = 14,000 元。差 6,000 元。","id":"Bd03","section":"d","limit":60,"opts":["4,000 元","10,000 元","6,000 元","14,000 元"],"correct":2},{"context":"供应链统计运输时间，比例均按订单数计算。","table":[["路线","订单占比","准时率"],["北线","40%","95%"],["南线","60%","待求"]],"prompt":"若整体准时率要达到 92%，南线至少应达到多少？","why":"0.4 × 95% ＋ 0.6 × x = 92%，解得 x = 90%。","id":"Bd04","section":"d","limit":75,"opts":["88%","89%","92%","90%"],"correct":3},{"context":"月初订阅用户 5,000 名。续费率以月初用户为分母。新增不计入续费，且月内无重复新增。","table":[["事项","本月数据"],["月初用户续费率","84%"],["全新付费用户","1,050"]],"prompt":"月末付费用户相对月初的净增长率是多少？","why":"存量续费 4,200 人，加新增得 5,250 人。净增 250 ÷ 月初 5,000 = 5%。","id":"Bd05","section":"d","limit":90,"opts":["−16%","4.76%","21%","5%"],"correct":3},{"context":"项目组为四项任务安排工期。每项完成后，后续任务才能开始。","table":[["任务","所需天数","依赖"],["调研","4","无"],["采购","6","无"],["组装","3","调研和采购"],["验收","2","组装"]],"prompt":"人力充足且可并行，最短总工期是多少天？","why":"调研和采购可同时开始；等待较慢的采购 6 天，然后组装 3 天、验收 2 天，总计 11 天。","id":"Bd06","section":"d","limit":60,"opts":["9 天","13 天","11 天","15 天"],"correct":2},{"context":"两条流水线每小时都按表中时间轮转，停机期不产出。","table":[["线别","开机时产量","每小时开机时间"],["甲","120 件/小时","45 分钟"],["乙","90 件/小时","50 分钟"]],"prompt":"连续 8 小时，两线合计产量多少件？","why":"甲每个自然小时产 90 件，乙产 75 件。两线合计 (90＋75) × 8 = 1,320 件。","id":"Bd07","section":"d","limit":75,"opts":["1,260 件","1,320 件","1,440 件","1,680 件"],"correct":1},{"context":"同一周内两种渠道的客户可能重合。","table":[["指标","人数"],["使用搜索","1,200"],["使用推荐","900"],["两种都用","350"],["该周总活跃","2,000"]],"prompt":"两种渠道都没使用的活跃客户有多少？","why":"至少用一种的有 1,200＋900−350 = 1,750。两种都没用 = 2,000−1,750 = 250。","id":"Bd08","section":"d","limit":90,"opts":["100 人","250 人","150 人","350 人"],"correct":1},{"context":"运费按每单计，包邮门槛调整后结构如下。","table":[["项目","调整前","调整后"],["订单量","1,000","1,200"],["包邮比例","40%","50%"],["商家每个包邮单承担","8 元","7 元"]],"prompt":"调整后商家承担的总运费较之前增加多少？","why":"调整前 1,000 × 40% × 8 = 3,200 元，调整后 1,200 × 50% × 7 = 4,200 元。增加 1,000 元。","id":"Bd09","section":"d","limit":60,"opts":["1,000 元","200 元","800 元","1,200 元"],"correct":0},{"context":"三个站点的检测结果只公布到如下粒度。","table":[["站点","检测件数","发现缺陷"],["甲","100","2"],["乙","200","4"],["丙","未公布","3"]],"prompt":"下列哪项一定能由表中数据算出？","why":"甲乙合并为 6/300 = 2%。丙只有缺陷数，缺少检测件数，无法判断丙的比例和三站的总体比例。","id":"Bd10","section":"d","limit":75,"opts":["缺陷率最高的一定是乙","三站合并缺陷率恰好为 2%","甲乙合并缺陷率为 2%","丙的缺陷率高于甲"],"correct":2}],"f":[{"prompt":"箭头转动的步幅也在变化。选下一幅。","cols":6,"frames":[["arrow",0],["arrow",1],["arrow",3],["arrow",6],["arrow",2],null],"why":"顺时针每步分别转 1、2、3、4 个 45°，下一步转 5 格，从右指向左上。","id":"Bf01","section":"f","limit":75,"opts":[["arrow",4],["arrow",7],["arrow",5],["arrow",6]],"correct":1},{"prompt":"把奇数位和偶数位分别观察，补全第六幅骨牌。","cols":6,"frames":[["dom",1,2],["dom",5,5],["dom",2,2],["dom",4,4],["dom",3,2],null],"why":"奇数位左端递增、右端恒为 2；偶数位是递减的同点骨牌：5|5、4|4、3|3。","id":"Bf02","section":"f","limit":90,"opts":[["dom",4,2],["dom",3,3],["dom",3,1],["dom",2,2]],"correct":1},{"prompt":"每行右图由左、中两图合成，选第三行右图。","cols":3,"frames":[["grid",3,"014"],["grid",3,"145"],["grid",3,"05"],["grid",3,"267"],["grid",3,"678"],["grid",3,"28"],["grid",3,"135"],["grid",3,"345"],null],"why":"相同位置两次涂黑会抵消，只出现一次的黑格保留。末行抵消 3、5，保留上中和中心。","id":"Bf03","section":"f","limit":60,"opts":[["grid",3,"145"],["grid",3,"35"],["grid",3,"1345"],["grid",3,"14"]],"correct":3},{"prompt":"三行执行同一平面旋转。补上右下图。","cols":2,"frames":[["grid",3,"0367"],["grid",3,"0123"],["grid",3,"125"],["grid",3,"578"],["grid",3,"048"],null],"why":"每张图顺时针转 90°；末行原来左上、中心、右下的斜线变成右上、中心、左下。","id":"Bf04","section":"f","limit":75,"opts":[["grid",3,"2468"],["grid",3,"028"],["grid",3,"246"],["grid",3,"048"]],"correct":2},{"prompt":"每行第三组柱高按同一规则得到。哪组填空？","cols":3,"frames":[["bars",[1,3,2]],["bars",[2,1,3]],["bars",[2,3,3]],["bars",[3,1,1]],["bars",[1,2,3]],["bars",[3,2,3]],["bars",[1,3,1]],["bars",[2,2,2]],null],"why":"逐位置保留两图中较高的柱。末行逐位比较为 max(1,2)、max(3,2)、max(1,2)。","id":"Bf05","section":"f","limit":90,"opts":[["bars",[3,3,3]],["bars",[2,3,2]],["bars",[2,2,2]],["bars",[1,2,1]]],"correct":1},{"prompt":"比较指针与外圈圆点之间的移动。选下一幅。","cols":5,"frames":[["dial",0,1],["dial",1,3],["dial",2,5],["dial",3,7],null],"why":"每步指针顺时针走一格，圆点顺时针走两格。下一步指针向下，圆点在右上。","id":"Bf06","section":"f","limit":60,"opts":[["dial",2,1],["dial",4,7],["dial",4,1],["dial",4,0]],"correct":2},{"prompt":"同行第三张骨牌由前两张算出。请补全。","cols":3,"frames":[["dom",1,2],["dom",2,3],["dom",3,5],["dom",2,1],["dom",2,3],["dom",4,4],["dom",3,1],["dom",2,2],null],"why":"骨牌按左右端对应相加。末行左端 3＋2 = 5，右端 1＋2 = 3。","id":"Bf07","section":"f","limit":75,"opts":[["dom",4,3],["dom",6,2],["dom",3,5],["dom",5,3]],"correct":3},{"prompt":"前两行示范同一变换，补全第三行。","cols":2,"frames":[["grid",3,"024"],["grid",3,"135678"],["grid",3,"3458"],["grid",3,"01267"],["grid",3,"137"],null],"why":"每个小格黑白反转，位置不动。第三行要留白上中、中左、下中，其余六格涂黑。","id":"Bf08","section":"f","limit":90,"opts":[["grid",3,"02458"],["grid",3,"137"],["grid",3,"024568"],["grid",3,"023568"]],"correct":2},{"prompt":"看同一形状再次出现时的数量，补全第六幅。","cols":6,"frames":[["count",3,1],["count",0,3],["count",3,2],["count",0,2],["count",3,3],null],"why":"三角与圆交替。三角依次为 1、2、3 个，圆依次为 3、2、1 个。","id":"Bf09","section":"f","limit":60,"opts":[["count",0,1],["count",3,4],["count",0,3],["count",3,1]],"correct":0},{"prompt":"这是一张立方体展开图。折成立方体后，哪个面与 B 面相对？","cols":1,"frames":[["net","ABCDEF"]],"why":"横排四面折成侧壁，沿横排隔一面的两面相对。B 与 D 相对；A、E、F 与 B 相邻。","id":"Bf10","section":"f","limit":75,"opts":["D 面","F 面","A 面","E 面"],"correct":0}]},"c-c":{"v":[{"context":"一个平台准备停掉使用人数最少的功能。研究员发现，该功能主要用于批量修复数据，平时几乎无人打开，出错时却能一次救回大量记录。","prompt":"评估是否下线，哪种信息最能改变决策？","why":"低频应急功能的价值集中在尾部事件。应比较预期损失、维护成本及替代成本，单看日常频次会漏掉主要收益。","id":"Cv01","section":"v","limit":60,"opts":["比较最近一周和一年前同周的使用人数，并按人数变化排序","比较该功能与首页高频功能的单次点击成本及界面占用","比较出现数据故障时，该功能用户与普通用户的平均登录天数","比较可避免的预期损失及替代和维护成本"],"correct":3},{"context":"如果零件有隐裂且承受高压，测试灯一定亮。本次测试灯没亮，测试人员确认设备处于高压状态。","prompt":"在规则和设备正常的前提下，必然成立的是？","why":"有高压而没亮，排除“有隐裂且高压”中的隐裂。规则只涉及隐裂，没有排除其他缺陷，也没有给灯亮的唯一原因。","id":"Cv02","section":"v","limit":75,"opts":["凡是灯亮的零件都有隐裂","低压时测试灯绝不会亮","本次零件没有隐裂","本次零件没有任何缺陷"],"correct":2},{"context":"新包装在两个城市试销。甲城只铺精品店，复购较高；乙城只铺折扣店，复购较低。团队认为甲城消费者更喜爱新包装。","prompt":"要区分城市差异与渠道差异，最值得补哪组观察？","why":"目前城市和渠道完全重叠，不能区分两者。交叉覆盖城市与渠道后才有组内可比对象。","id":"Cv03","section":"v","limit":90,"opts":["两城都补采两类相近门店的同期数据","按两城人口比例重算现有两批客户的总体复购率","给已经完成复购的顾客统一发问卷，询问他们是否喜欢新包装","在甲城增加精品店样本，在乙城增加折扣店样本并统一样本量"],"correct":0},{"context":"有人说：降低结算页的填写项，让更多人完成付款，因此一定能提高每个付费客户的净收益。","prompt":"论证从哪一步跳得最远？","why":"总体付款人数与人均净收益分母、机制均不同。新增用户的金额、成本和退款情况都可能改变人均结果。","id":"Cv04","section":"v","limit":60,"opts":["旧用户填写熟练，减少字段的效果可能小于首次购买者","结算页是否应精简，还应比较工程投入和维护成本","结算步骤减少与实际完成付款之间需要行为数据验证","付款人数增加，不能推出人均净收益增加"],"correct":3},{"context":"有三人评审方案，每人只投一次赞成或反对。已知至少两人赞成；若甲赞成，乙一定反对。","prompt":"哪项必然为真？","why":"甲乙不能同时赞成，两人之中最多一票赞成。要凑足两票，丙必定赞成。甲、乙中究竟谁赞成无法确定。","id":"Cv05","section":"v","limit":75,"opts":["丙赞成","甲赞成","三人都赞成","乙反对"],"correct":0},{"context":"团队建立了故障匿名上报渠道。第一个月记录的轻微故障比过去多，严重事故没有增加。主管担心系统可靠性已变差。","prompt":"哪项发现最有助于区分真实故障增多和报告意愿提高？","why":"自动监测在检测规则稳定时提供相对独立的参照，人工报告覆盖率能帮助识别记录行为的变化。","id":"Cv06","section":"v","limit":90,"opts":["只比较由同一主管确认的人工报告，以消除故障类型口径差异","用不变的自动监测规则对照人工上报覆盖率","在报告里随机抽取相同比例，比较两期上报者描述问题的详细程度","把两期上报数量按总工时标准化，再比较每千工时的报告数"],"correct":1},{"context":"研究团队先选出年度销售增长最快的五家门店，再总结共同做法，发现它们都举办了会员活动。团队打算把活动推广到所有门店。","prompt":"哪种额外发现会最削弱其依据？","why":"只看赢家不知道该做法是否能区分成功与否；若低增长门店也同样普遍采用，原证据的区分力很弱。","id":"Cv07","section":"v","limit":60,"opts":["少数会员参加了不止一次，同一会员能出现在多期签到表上","五家门店的活动都集中在旺季，并各自保留了完整签到记录","低增长门店也同样普遍举办此类活动","五家门店各自采用的活动形式有差异，但核心权益相同"],"correct":2},{"context":"甲说，新工艺的成品率更好，应尽快采用。乙说，若连续停机换线，旺季交付损失可能超过良率收益。两人的数据都来自同一批设备。","prompt":"他们真正的分歧集中在哪里？","why":"乙并未否定良率收益，而是增加了停机交付损失这一成本项；评估边界不同。","id":"Cv08","section":"v","limit":75,"opts":["切换期的交付损失是否纳入决策","旺季客户是否只关心交付速度，忽视产品的一致性","评估设备是否要更换为覆盖不同产能档次的更大样本","成品率改善究竟来自新工艺，还是来自操作人员更熟练"],"correct":0},{"context":"档案中只有同时带签名和日期的文件才算有效。抽到的一袋文件里，所有带签名的都有日期，但并非所有有日期的都有签名。","prompt":"至少可以确定袋中存在什么？","why":"“并非所有”给出有日期无签名的反例，缺少必要条件故无效。“只有……才”没有宣称签名日期足以排除其他无效原因。","id":"Cv09","section":"v","limit":90,"opts":["一份既无日期也无签名的文件","一份有日期但无签名的无效文件","一份无日期却有效的文件","所有带签名的文件一定有效"],"correct":1},{"context":"产品团队为减少实验失误，要求在实验开始前写下主要指标和判断阈值。实验结束后仍允许分析其他指标，但要求单列。","prompt":"这条规则主要防什么？","why":"预先约定能分开事前检验和事后探索。保留单列分析，说明规则并非阻止新发现。","id":"Cv10","section":"v","limit":60,"opts":["防止研究者使用同一组实验数据计算多个次要指标","防止多个业务指标同时改善时，团队低估整体收益","防止探索阶段的发现影响未来实验主要指标的选择","防止事后挑指标冒充事前检验"],"correct":3}],"d":[{"context":"对两批获客比较首周转化，只统计已完整观察 7 天的人。","table":[["批次","获客人数","已满 7 天","其中已转化"],["甲","2,000","2,000","240"],["乙","3,000","1,200","168"]],"prompt":"基于可比观察窗，乙比甲的转化率如何？","why":"甲 240/2,000 = 12%，乙 168/1,200 = 14%，相差 2 个百分点。将乙未成熟客户放入分母会低估转化。","id":"Cd01","section":"d","limit":75,"opts":["低 2 个百分点","高 2 个百分点","低 6.4 个百分点","高 16.7 个百分点"],"correct":1},{"context":"供应商允许选择两种计费方式，未超额度部分不另收费。","table":[["方案","固定月费","用量费用"],["甲","4,000 元","含 1,000 件，超出每件 4 元"],["乙","1,000 元","从第 1 件起每件 3 元"]],"prompt":"用量为 1,400 件时，哪项正确？","why":"甲 4,000＋(1,400−1,000)×4 = 5,600 元；乙 1,000＋1,400×3 = 5,200 元。","id":"Cd02","section":"d","limit":90,"opts":["两方案相同","甲便宜 400 元","乙便宜 1,600 元","乙便宜 400 元"],"correct":3},{"context":"某渠道的总毛利率按总毛利额除以总收入计算。","table":[["产品","收入（万元）","毛利率"],["标准版","72","25%"],["专业版","48","50%"]],"prompt":"若标准版收入不变，仅增加专业版收入，整体毛利率达到 40% 时需新增多少万元收入？","why":"原毛利 18＋24 = 42 万元。设新增收入 x，则 (42＋0.5x)/(120＋x) = 0.4，解得 x = 60。","id":"Cd03","section":"d","limit":60,"opts":["60 万元","24 万元","72 万元","36 万元"],"correct":0},{"context":"总预算为整数个 10 万元，项目不可拆分，同一项目只能选一次。","table":[["项目","投入（万元）","预计净收益（万元）"],["甲","50","32"],["乙","40","27"],["丙","30","24"],["丁","20","11"]],"prompt":"预算 70 万元且不要求花完，哪种组合预计净收益最高？","why":"乙丙投入 70、净收益 51；甲丁 43，乙丁 38，丙丁 35。三个最便宜项目也超预算，单个更低。","id":"Cd04","section":"d","limit":75,"opts":["乙＋丁","丙＋丁","乙＋丙","甲＋丁"],"correct":2},{"context":"一家商店按含退货的完整订单批次核算，每笔退货全额退款，不考虑其他费用。","table":[["订单批次","销售额（万元）","按销售额计的退款率"],["试点","120","12%"],["对照","110","4%"]],"prompt":"两批扣除退款后的收入相差多少？","why":"试点 120×88% = 105.6 万元，对照 110×96% = 105.6 万元。较高的账面销售额没有变成净收入优势。","id":"Cd05","section":"d","limit":90,"opts":["试点高 0.8 万元","试点高 10 万元","对照高 0.8 万元","相同"],"correct":3},{"context":"团队上线前后各观察一周。估算方案采用“试点前后变化减去对照同期变化”，所有数值均为同口径的履约率。","table":[["群体","上线前","上线后"],["试点","78%","87%"],["对照","80%","84%"]],"prompt":"按给定方法，方案的估计增益是多少？","why":"试点变化 9 个百分点，对照变化 4 个百分点，相减为 5。上线后的组间差 3 个百分点没有校正起点。","id":"Cd06","section":"d","limit":60,"opts":["5 个百分点","7 个百分点","9 个百分点","3 个百分点"],"correct":0},{"context":"每次来电只能分到一个时段。均值按所有单次来电的等待时间计算。","table":[["时段","来电数","平均等待"],["上午","120","3 分钟"],["下午","80","8 分钟"],["晚上","50","待求"]],"prompt":"若全日平均等待正好 5 分钟，晚间平均等待是多少？","why":"全日等待 250×5 = 1,250 人分钟。晚间占 1,250−360−640 = 250 人分钟，除以 50 得 5 分钟。","id":"Cd07","section":"d","limit":75,"opts":["5 分钟","7 分钟","6 分钟","4 分钟"],"correct":0},{"context":"同一批顾客做了两轮测试，记录每轮是否通过。","table":[["事项","人数"],["参与两轮","200"],["第一轮通过","110"],["第二轮通过","130"],["两轮都通过","80"]],"prompt":"在第一轮未通过的人中，有多少比例在第二轮通过？","why":"第一轮未过有 90 人；仅第二轮通过为 130−80 = 50 人。条件比例 = 50/90，约为 55.6%。","id":"Cd08","section":"d","limit":90,"opts":["25%","约 72.2%","约 55.6%","约 38.5%"],"correct":2},{"context":"试验的两个版本按照相同条件获客；每笔成交均只产生一次贡献。","table":[["版本","转化率","每笔成交毛利","每位访客服务成本"],["甲","8%","60 元","1 元"],["乙","10%","50 元","1.5 元"]],"prompt":"按每千访客的毛利减服务成本，哪一版本更好？","why":"甲 1,000×8%×60−1,000 = 3,800 元；乙 1,000×10%×50−1,500 = 3,500 元。应同时考虑转化、毛利与成本。","id":"Cd09","section":"d","limit":60,"opts":["甲多 500 元","甲多 300 元","乙多 300 元","乙多 200 元"],"correct":1},{"context":"某业务来年可选只做基础项目，也可以加一项试点。基础项目净收益已确定；试点结果互斥且覆盖所有情况。","table":[["项目","情形","净收益"],["基础","确定","80 万元"],["附加试点","成功，概率 60%","额外赚 50 万元"],["附加试点","失败，概率 40%","额外亏 30 万元"]],"prompt":"若采用“基础＋试点”，期望总净收益是多少？","why":"试点增量期望 = 0.6×50 − 0.4×30 = 18 万元。加确定的 80 万元，合计 98 万元。","id":"Cd10","section":"d","limit":75,"opts":["100 万元","86 万元","110 万元","98 万元"],"correct":3}],"f":[{"prompt":"前两幅作用的次序很重要。依照示范补全右下图。","cols":3,"frames":[["grid",3,"0135"],["grid",3,"124"],["grid",3,"035"],["grid",3,"2478"],["grid",3,"058"],["grid",3,"247"],["grid",3,"01467"],["grid",3,"1268"],null],"why":"每行保留左图有而中图没有的黑格，即从左图剔除重合部分。末行从 0、1、4、6、7 去掉 1、6，余 0、4、7（从左上按行编号 0–8）。","id":"Cf01","section":"f","limit":75,"opts":[["grid",3,"0124678"],["grid",3,"047"],["grid",3,"16"],["grid",3,"28"]],"correct":1},{"prompt":"骨牌每端各用一种运算。按前两行填空。","cols":3,"frames":[["dom",1,5],["dom",2,2],["dom",3,3],["dom",2,1],["dom",3,5],["dom",5,4],["dom",3,6],["dom",1,2],null],"why":"左端求和，右端取差的绝对值。末行是 3＋1 = 4，|6−2| = 4。","id":"Cf02","section":"f","limit":90,"opts":[["dom",4,4],["dom",2,4],["dom",4,2],["dom",3,4]],"correct":0},{"prompt":"逐列比较同一行的两组柱高，选合成结果。","cols":3,"frames":[["bars",[3,2,1]],["bars",[2,1,3]],["bars",[2,1,1]],["bars",[1,3,2]],["bars",[3,2,1]],["bars",[1,2,1]],["bars",[3,1,3]],["bars",[2,3,2]],null],"why":"右图每根柱子取前两幅相同位置中较矮的一根。末行从左至右是 2、1、2。","id":"Cf03","section":"f","limit":60,"opts":[["bars",[1,2,1]],["bars",[3,3,3]],["bars",[2,1,2]],["bars",[2,3,2]]],"correct":2},{"prompt":"每两次转动构成一组，箭头接下来指向哪里？","cols":6,"frames":[["arrow",0],["arrow",2],["arrow",1],["arrow",3],["arrow",2],null],"why":"循环执行顺时针 90°、逆时针 45°。第五幅向右，下一步顺时针 90° 后向下。","id":"Cf04","section":"f","limit":75,"opts":[["arrow",0],["arrow",3],["arrow",4],["arrow",1]],"correct":2},{"prompt":"对照每行，找出使图案变化的镜面。","cols":2,"frames":[["grid",3,"0135"],["grid",3,"0137"],["grid",3,"267"],["grid",3,"256"],["grid",3,"124"],null],"why":"反射轴是从左上到右下的对角线，行、列互换。末图上中、右上、中心映到中左、左下、中心。","id":"Cf05","section":"f","limit":90,"opts":[["grid",3,"046"],["grid",3,"124"],["grid",3,"346"],["grid",3,"245"]],"correct":2},{"prompt":"指针等步转动，圆点的步数逐次改变。选下一幅。","cols":6,"frames":[["dial",0,0],["dial",2,1],["dial",4,3],["dial",6,6],["dial",0,2],null],"why":"八方位上指针每次顺时针走两格，圆点依次走 1、2、3、4、5 格。最后指针向右，圆点在左上。","id":"Cf06","section":"f","limit":60,"opts":[["dial",2,6],["dial",2,7],["dial",6,5],["dial",4,7]],"correct":1},{"prompt":"一张 4×4 方格纸先将右半向左对折，再将下半向上对折。图示为折好的 2×2 纸层，黑格处打穿所有层。完全展开后，孔在哪里？","cols":1,"frames":[["grid",2,"1"]],"why":"先撤销上下折叠，孔落在第 1 和第 4 行；再撤销左右折叠，孔落在第 2 和第 3 列。因此两行各有中间两个孔。","id":"Cf07","section":"f","limit":75,"opts":[["grid",4,"1,2,9,10"],["grid",4,"5,6,9,10"],["grid",4,"0,3,12,15"],["grid",4,"1,2,13,14"]],"correct":3},{"prompt":"每个位置都取决于上一行。观察同列的纵向规律，补全最后一格。","cols":3,"frames":[["grid",3,"01"],["grid",3,"05"],["grid",3,"34"],["grid",3,"25"],["grid",3,"27"],["grid",3,"14"],["grid",3,"78"],["grid",3,"38"],null],"why":"沿每一列向下，黑格图案都顺时针转 90°。第三列从中左＋中心，转成上中＋中心，再转成中右＋中心。","id":"Cf08","section":"f","limit":90,"opts":[["grid",3,"45"],["grid",3,"34"],["grid",3,"14"],["grid",3,"47"]],"correct":0},{"prompt":"左图先左右翻转，再交换黑白。按这两步补全最后的右图。","cols":2,"frames":[["grid",3,"01"],["grid",3,"0345678"],["grid",3,"025"],["grid",3,"145678"],["grid",3,"046"],null],"why":"先镜像：左上、中心、左下移为右上、中心、右下。再将这三格留白，其他六格涂黑。","id":"Cf09","section":"f","limit":60,"opts":[["grid",3,"123578"],["grid",3,"245"],["grid",3,"0135678"],["grid",3,"013567"]],"correct":3},{"prompt":"把展开图折成立方体。下列哪组三个面能在同一个顶点相遇？","cols":1,"frames":[["net","PQRSUV"]],"why":"横排中 P 与 R、Q 与 S 分别相对，盖面 U 与 V 相对。一个顶点恰从每组相对面中取一个；只有 P、Q、U 符合。","id":"Cf10","section":"f","limit":75,"opts":["P、R、U","Q、S、V","P、U、V","P、Q、U"],"correct":3}]},"m-a":[{"title":"按期上线，还是缩小承诺？","context":"你接手一个预约服务，两周后必须向首批门店交付。合同要求预约与取消都能使用，营销页另宣传了智能推荐，但尚未写入合同。剩余人力 12 人日：预约收尾需 4 人日，取消和异常退款需 5 人日，稳定性验证需 3 人日，智能推荐需 5 人日。销售已口头答应两家大店会上推荐。研发提出压缩验证，客服担心首发投诉。","prompt":"作为负责人，你今天怎样定范围？写清保留和推迟什么、如何处理两家大店的预期，以及上线或暂缓的判断条件。","criteria":[["范围与算账","说明 4＋5＋3 正好占用 12 人日。若保推荐，给出可信的新增人力、延后时间或替换范围，说明谁承担代价。"],["利益相关方","区分合同义务、真实的口头承诺与宣传，亲自协调销售和客户，明确过渡安排。"],["交付责任","写清产品、研发、客服各自要产出什么，以及何时集成联测。"],["放行与止损","提出可检查的放行条件、监测与回退办法；允许关键链路未达标时延期或缩小首发。"]],"sample":"今天确认首发交付预约、取消退款和稳定性验证，分别投入 4、5、3 人日。先把推荐移出首发并修订宣传。今天我和销售一起向两家门店说明原因，逐家核对推荐是否影响其开业计划，可先给人工精选清单，三天内回复正式排期。研发分两段打通预约和取消退款，客服参与异常单演练。发布前逐项核验付款、取消、到账和告警，任一资金链路失败就暂缓。先选愿意试用的一家门店灰度，我负责看异常及客诉，再决定扩面。","miss":"只说“协调大家加快”会留下 5 人日缺口；只说按合同办，也漏掉了销售已经建立的客户预期。","id":"Am01"},{"title":"两支团队为何都在等对方？","context":"你负责改善首次交付。最近一个月，20 个受阻订单中有 12 个缺安装参数、5 个遇到旧设备兼容问题、3 个因客户现场未就绪。销售填表只需 3 分钟，补齐参数估计要再多 6 分钟；交付团队每个缺参单平均多花 50 分钟追问。销售负责人担心客户在签单前流失，两位负责人已经在群里互相指责。你有两周做一次小范围改进。","prompt":"请给出你前 48 小时的处理方式、两周内的试验和判断是否推广的依据。说明遇到客户说不清参数时怎么办。","criteria":[["定位与限度","优先看 12 个缺参案例，辨认谁能提供资料；说明只统计了受阻单，不能由 12/20 推断所有订单的缺参率。"],["化解冲突","分别听双方顾虑，随后共同核对实际订单，明确交接点及异常负责人。"],["低成本验证","区分签约必填与安装前补齐，给说不清的客户留出照片、技术回访等替代路径。"],["推广标准","同时观察首次成功率或补参工时，以及签约流失、客户负担；按可比客户和相同窗口复核。"]],"sample":"我先请双方停止群里归责，今天分别看各自遇到的真实订单，再一起重走三笔缺参流程。12 笔来自受阻样本，先补全同期总订单和签约流失基线。明天选一组类似客户试行：签约时只确认设备型号和现场联系人，安装前由交付专员补齐参数；客户说不清就约技术回电或拍铭牌。销售负责取得联系许可，交付负责次日核实。两周后对比试点与相近原流程客户的首次交付成功率、追问工时、签约率及投诉。若交付改善且签约无明显损失再扩；若签约恶化就后移非必要字段。","miss":"把所有字段前置给销售，可能把交付成本转成客户流失；只强调开会也不能检验流程是否变好。","id":"Am02"}],"m-b":[{"title":"增长达标，是否扩大试点？","context":"你负责订阅服务的新优惠。两个可比地区同期试行，试点每千名访客新增 110 笔订单，对照为 100 笔。每单实收同为 100 元。试点首周退款率 8%，对照 3%；退款常在第 14 天才结清，目前只看到第 7 天。试点每千访客还多花 600 元服务成本。渠道希望明天全面推广，两家重点客户反馈误购较多。","prompt":"请向业务负责人提交明日决定，说明你如何使用已有数字、如何处理客户信号，以及何时、依据什么放量或回滚。","criteria":[["算清账","按当前退款估算：试点 10,120 元，对照 9,700 元；差额 420 元，小于 600 元新增服务成本。相对贡献暂少 180 元。"],["界定未知","第 7 天退款还会变化；两家反馈提示风险，但样本不足以推断全部。写清同龄批次、同类客户和完整观察窗。"],["明日动作","给出继续、缩量或暂停的具体范围；对风险客户有即时保护，明确负责人与取证动作。"],["决策门槛","同时看完整观察期的单位贡献和客户指标。写明检查日期、扩面或停止条件及谁决定。"]],"sample":"明天先不扩。按每千访客计，首周试点扣退款后收入 10,120 元，对照 9,700 元，增加 420 元，尚盖不住多出的 600 元服务成本。我今天请渠道逐单核对两家客户的误购原因，暂停风险入口并提供纠错退款；其他低风险流量维持小规模和对照。数据负责人跟踪同批次至第 14 天，按渠道分层复核净贡献、误购率和客诉。若完整窗口中单位贡献稳定转正、重点客户误购没有恶化，再分批扩面；负贡献持续就回滚。若中途发现明确的误导展示，立即停掉相关入口，由我通知渠道与客户。","miss":"只引用订单增加 10% 会忽略退款与成本；只说等一周则漏掉了两家客户今天就需要的保护。","id":"Bm01"},{"title":"让骨干继续救火，还是让新人接手？","context":"团队每周有 10 次设备交付。一名骨干独立负责 8 次，另两名同事目前能完成常规操作。过去四周出现 3 次异常，均由骨干补救。骨干两周后起休假 10 天，下一周还有一次高价值客户迁移，失败会造成停用。骨干表示“我演示一遍最快”，新人表示“没有实际操作，很难独立判断”。你不能增加人手。","prompt":"请说明高价值迁移由谁负责、两周内怎样交接、如何验证新人能独立工作，以及交接未达标时怎样守住交付。","criteria":[["风险分层","区别常规单与高价值迁移。讲明执行、复核、最终决策各由谁承担，安排与现有人员能力匹配。"],["培养方法","设计影子观察、反向演练或分级授权，让新人实际操作异常；把骨干的判断和回滚条件留下来。"],["可验收标准","给出可观察的独立通过条件，例如异常识别、停手、回退、通知客户，指定检查时间。"],["兜底与沟通","预先保留变更窗口、回滚或延期方案，告知客户及接手人；避免把休假骨干当作唯一后备。"]],"sample":"下周的高价值迁移由骨干把关，一名新人按演练过的步骤操作，我决定放行或回退，另一名新人负责监测和客户通报。今天先把 3 起异常还原成演练，标出识别信号、停手机制和恢复步骤。第一周常规单由新人轮流主操，骨干旁听；第二周骨干退出操作，由两人互为复核并独立演练一次故障。验收要求能识别错配、在约定时限内回退并准确告知影响。我在休假前三天检查结果；未通过就拆分高风险批次、与客户重约窗口，休假期间只承接已验证范围。","miss":"写一份手册或演示一次，无法证明新人遇到异常时会停手；所有决定仍等骨干远程确认，也没有解决单点依赖。","id":"Bm02"}]};</script><script>'use strict';
+const app = document.getElementById('app');
+const sections = {v:'言语理解', d:'数据分析', f:'图形推理'};
+const titles = {'c-a':'基础与节奏','c-b':'比较与推断','c-c':'组合与边界','m-a':'交付与协作','m-b':'经营与带队'};
+const prefix = 'weekend-workbook.v1:';
+const memory = new Map();
+const tabId = typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : String(Math.random());
+let storeOK = true;
+let current = null;
+let running = false;
+let lastTick = 0;
+let lastSaved = 0;
+let pendingStart = '';
+let filterErrors = false;
+let flash = '';
+let composing = false;
+let visibleRoute = '';
+let lastActive = null;
+const letters = 'ABCD';
+const modesFor = book => book[0] === 'c' ? ['all','v','d','f'] : ['all','1','2'];
+const modeLabel = (book, mode) => mode === 'all' ? '整卷' : book[0] === 'c' ? sections[mode] : '单题 '+mode;
+const displayBook = b => (b[0]==='c'?'认知 ':'管理 ')+b[2].toUpperCase()+' 卷';
+const timeString = ms => { const s=Math.max(0,Math.ceil(ms/1000)); return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); };
+const escapeHTML = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+const keyOf = (book,mode) => prefix+book+'/'+mode;
+function storageWarning(){storeOK=false;document.getElementById('storage-warning').hidden=false;}
+function read(key){
+  let value=memory.get(key);
+  if(storeOK){try{value=localStorage.getItem(key);}catch{storageWarning();}}
+  if(!value)return null;
+  try{return JSON.parse(value);}catch{return null;}
+}
+function write(key,value){
+  const serialized=JSON.stringify(value);
+  memory.set(key,serialized);
+  if(storeOK){try{localStorage.setItem(key,serialized);}catch{storageWarning();}}
+}
+function remove(key){
+  memory.delete(key);
+  if(storeOK){try{localStorage.removeItem(key);}catch{storageWarning();}}
+}
+function itemsFor(book,mode){
+  if(book[0]==='c')return mode==='all'?Object.values(BANK[book]).flat():BANK[book][mode];
+  return mode==='all'?BANK[book]:[BANK[book][Number(mode)-1]];
+}
+function timeBudget(book,mode){
+  return (book[0]==='c'?(mode==='all'?30:10):(mode==='all'?40:20))*60000;
+}
+function fresh(book,mode){
+  const qs=itemsFor(book,mode);
+  return {book,mode,pos:0,left:timeBudget(book,mode),item:(qs[0].limit||0)*1000,answers:{},expired:{},checks:{},done:false,reason:'',owner:null,touched:0};
+}
+function persist(t=Date.now()){
+  if(!current)return;
+  current.touched=t;
+  current.owner=running?tabId:null;
+  write(keyOf(current.book,current.mode),current);
+  lastSaved=t;
+}
+function foreign(s){return !!(s && s.owner && s.owner!==tabId && Date.now()-s.touched<4500);}
+function hasControl(){
+  if(!running||!current)return false;
+  const other=read(keyOf(current.book,current.mode));
+  if(other && other.owner && other.owner!==tabId){running=false;current=other;flash='另一标签页已接手此练习。';renderSession();return false;}
+  return true;
+}
+function start(){
+  if(!current||current.done||document.hidden)return;
+  const saved=read(keyOf(current.book,current.mode));
+  if(foreign(saved)){flash='这份练习正在另一个标签页计时，请先在那里暂停。';renderSession();return;}
+  if(saved){current=saved;if(current.done){renderSession();return;}}
+  running=true;lastTick=performance.now();flash='';persist();renderSession();
+}
+function finish(reason){
+  running=false;current.done=true;current.reason=reason;lastActive=null;
+  persist();filterErrors=false;renderSession();window.scrollTo(0,0);
+}
+function markNext(expired){
+  const qs=itemsFor(current.book,current.mode);
+  if(expired)current.expired[qs[current.pos].id]=true;
+  if(current.pos+1===qs.length){finish(expired?'最后一题计时结束':'已交卷');return false;}
+  current.pos++;current.item=qs[current.pos].limit*1000;
+  return true;
+}
+function tick(){
+  if(!running||!current||!hasControl())return;
+  const now=performance.now();
+  let delta=Math.max(0,now-lastTick); lastTick=now;
+  // A suspended mobile process may resume before its visibility event. Preserve the last checkpoint.
+  if(delta>10000){running=false;flash='检测到设备中断，已暂停。';persist();renderSession();return;}
+  let advanced=false;
+  const cognitive=current.book[0]==='c';
+  while(delta>0 && running){
+    const spend=Math.min(delta,current.left,cognitive?current.item:Infinity);
+    current.left=Math.max(0,current.left-spend);
+    if(cognitive)current.item=Math.max(0,current.item-spend);
+    delta-=spend;
+    if(current.left<=0){finish('整场时间到');return;}
+    if(cognitive && current.item<=0){
+      if(!markNext(true))return;
+      flash='上一题时间到，已按当时选项记录。';advanced=true;
+    }
+  }
+  if(advanced){persist();renderSession();window.scrollTo(0,0);}
+  else {if(Date.now()-lastSaved>=900)persist();showClock();}
+}
+function pause(message='练习已暂停。'){
+  if(!running)return;
+  tick();if(!running)return;
+  running=false;flash=message;persist();
+  renderSession();
+}
+function showClock(){
+  for(const [id,val] of [['overall',current.left],['itemtime',current.item]]){
+    const node=document.getElementById(id);if(!node)continue;
+    const next=timeString(val);if(node.textContent!==next)node.textContent=next;
+    node.classList.toggle('warn',val<=(id==='overall'?60000:15000));
+  }
+}
+function point(i,r){const a=Math.PI*(i/4-0.5);return [40+r*Math.cos(a),40+r*Math.sin(a)];}
+const svgDark='#234a40', svgLine='#8a9c92';
+function figure(fig){
+  const [type,a,b]=fig;
+  let art='',label='',view='0 0 80 80';
+  const dot=(x,y,r,fill=svgDark)=>'<circle cx="'+x+'" cy="'+y+'" r="'+r+'" fill="'+fill+'"/>';
+  const line=(x1,y1,x2,y2,width=2,color=svgDark)=>'<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="'+color+'" stroke-width="'+width+'" stroke-linecap="round"/>';
+  const direction=['上','右上','右','右下','下','左下','左','左上'];
+  if(type==='grid'){
+    const marked=new Set((a>=4?b.split(','):b.split('')).map(Number));
+    const size=60/a;
+    for(let i=0;i<a*a;i++){art+='<rect x="'+(10+(i%a)*size)+'" y="'+(10+Math.floor(i/a)*size)+'" width="'+size+'" height="'+size+'" fill="'+(marked.has(i)?svgDark:'#fffefa')+'" stroke="'+svgLine+'" stroke-width="1.25"/>';}
+    label=a+'乘'+a+'格，黑格行列为 '+[...marked].map(i=>(1+Math.floor(i/a))+'行'+(i%a+1)+'列').join('、');
+  }else if(type==='arrow'){
+    art='<g transform="rotate('+(a*45)+' 40 40)"><path d="M40 65V17M24 33L40 17L56 33" fill="none" stroke="'+svgDark+'" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>';label='箭头向'+direction[a];
+  }else if(type==='poly'){
+    const fill=b?svgDark:'none';
+    if(a===0)art='<circle cx="40" cy="40" r="23" fill="'+fill+'" stroke="'+svgDark+'" stroke-width="3"/>';
+    else {const p=Array.from({length:a},(_,i)=>{let t=2*Math.PI*i/a-Math.PI/2+(a===4?Math.PI/4:0);return (40+24*Math.cos(t))+','+(40+24*Math.sin(t));});art='<polygon points="'+p.join(' ')+'" fill="'+fill+'" stroke="'+svgDark+'" stroke-width="3"/>';}
+    label=(b?'实心':'空心')+(a?a+'边形':'圆形');
+  }else if(type==='dom'){
+    art='<rect x="3" y="21" width="74" height="38" rx="4" fill="none" stroke="'+svgDark+'" stroke-width="2"/>'+line(40,21,40,59,1.5);
+    const coords=[[],[[0,0]],[[-1,-1],[1,1]],[[-1,-1],[0,0],[1,1]],[[-1,-1],[1,-1],[-1,1],[1,1]],[[-1,-1],[1,-1],[0,0],[-1,1],[1,1]],[[-1,-1],[1,-1],[-1,0],[1,0],[-1,1],[1,1]]];
+    [a,b].forEach((v,i)=>coords[v].forEach(([x,y])=>{art+=dot((i?59:21)+x*9,40+y*10,2.8);}));label='骨牌左'+a+'右'+b;
+  }else if(type==='bars'){
+    a.forEach((v,i)=>{art+='<rect x="'+(12+i*21)+'" y="'+(63-v*15)+'" width="14" height="'+(v*15)+'" fill="'+svgDark+'"/>';});art+=line(8,63,72,63,1);label='柱高从左到右 '+a.join('、');
+  }else if(type==='dial'){
+    art='<circle cx="40" cy="40" r="28" fill="none" stroke="'+svgLine+'" stroke-width="1.4"/>';
+    for(let i=0;i<8;i++){const [x,y]=point(i,28);art+=dot(x,y,1.5,svgLine);}
+    art+='<g transform="rotate('+(a*45)+' 40 40)"><path d="M40 43V20M35 26L40 20L45 26" fill="none" stroke="'+svgDark+'" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>';
+    const [x,y]=point(b,30);art+=dot(x,y,4.2);label='指针向'+direction[a]+'，外圈圆点在'+direction[b];
+  }else if(type==='count'){
+    const loc=b===1?[[40,40]]:b===2?[[25,40],[55,40]]:b===3?[[24,53],[56,53],[40,26]]:[[23,23],[56,23],[23,56],[56,56]];
+    for(const [x,y] of loc)art+=a?'<polygon points="'+x+','+(y-10)+' '+(x-10)+','+(y+7)+' '+(x+10)+','+(y+7)+'" fill="'+svgDark+'"/>':dot(x,y,8);
+    label=b+'个'+(a?'三角形':'圆形');
+  }else if(type==='net'){
+    view='0 0 172 132';
+    [[0,1],[1,1],[2,1],[3,1],[1,0],[1,2]].forEach(([x,y],i)=>{const X=6+40*x,Y=6+40*y;art+='<rect x="'+X+'" y="'+Y+'" width="40" height="40" stroke="'+svgDark+'" stroke-width="1.5" fill="#fffefa"/><text x="'+(X+20)+'" y="'+(Y+27)+'" text-anchor="middle" font-family="sans-serif" font-size="21" fill="'+svgDark+'">'+a[i]+'</text>';});
+    label='横排依次'+a.slice(0,4)+'；第二格上方为'+a[4]+'，下方为'+a[5];
+  }
+  return '<svg viewBox="'+view+'" role="img" aria-label="'+escapeHTML(label)+'">'+art+'</svg>';
+}
+function table(rows){return '<table><thead><tr>'+rows[0].map(c=>'<th>'+escapeHTML(c)+'</th>').join('')+'</tr></thead><tbody>'+rows.slice(1).map(r=>'<tr>'+r.map(c=>'<td>'+escapeHTML(c)+'</td>').join('')+'</tr>').join('')+'</tbody></table>';}
+function stimulus(q){
+  let s=q.context?'<p class="context">'+escapeHTML(q.context)+'</p>':'';
+  if(q.table)s+=table(q.table);
+  if(q.frames){
+    const net=q.frames[0]?.[0]==='net';
+    s+='<div class="graph '+(net?'net':'')+'" style="--cols:'+q.cols+'">'+q.frames.map(f=>'<div class="tile '+(net?'net':'')+'">'+(f?figure(f):'<span class="qmark" aria-label="待补图形">?</span>')+'</div>').join('')+'</div>';
+  }
+  return s;
+}
+const choice = x => Array.isArray(x)?figure(x):escapeHTML(x);
+function optList(q,selected,review=false){
+  const fig=Array.isArray(q.opts[0]);
+  return '<div class="opts '+(fig?'figopts':'')+'">'+q.opts.map((o,i)=>{
+    const cls='opt '+(fig?'fig':'');
+    const inside='<span class="letter">'+letters[i]+'</span>'+choice(o);
+    return review?'<div class="'+cls+'">'+inside+'</div>':'<button type="button" class="'+cls+'" data-choice="'+i+'" aria-pressed="'+(selected===i)+'">'+inside+'</button>';
+  }).join('')+'</div>';
+}
+function crumbs(book){return '<div class="breadcrumb"><a href="#">练习目录</a>　/　'+displayBook(book)+'</div>';}
+function home(){
+  const shelf=(kind,ids)=>'<section class="shelf '+(kind==='m'?'manage':'')+'"><h2>'+(kind==='c'?'认知能力':'管理简述')+'</h2><p>'+(kind==='c'?'每卷 30 题 · 30 分钟，可拆成 3 个专项':'每卷 2 题 · 40 分钟，可单独写 1 题')+'</p>'+ids.map(id=>{
+    const sessions=modesFor(id).map(m=>read(keyOf(id,m))).filter(Boolean);
+    const status=sessions.some(s=>!s.done)?'有进度可继续':sessions.some(s=>s.done)?'有已交卷记录':'';
+    const description=kind==='m'?BANK[id].map(q=>q.title.replace(/[？]/g,'')).join(' / '):({a:'证据范围、基础口径与图形变换',b:'条件推断、结构差异与组合规律',c:'交叉验证、经营取舍与空间推理'})[id[2]];
+    return '<a class="book-link" href="#'+id+'"><span class="book-id">'+id[2].toUpperCase()+'</span><span class="details-col"><strong>'+titles[id]+'</strong><small>'+description+(status?' · '+status:'')+'</small></span><span class="arrow">›</span></a>';
+  }).join('')+'</section>';
+  app.innerHTML='<h1>认知与管理练习</h1><p class="intro">选一份整卷模拟，也可以只练 10 分钟专项。中途暂停后，在同一设备、同一浏览器可以接着做。</p><div class="book-grid">'+shelf('c',['c-a','c-b','c-c'])+shelf('m',['m-a','m-b'])+'</div><p class="foot">原创模拟题。认知交卷后按题看解析；管理简述可对照点评要点和参考答法自评。作答仅保存在当前浏览器。</p>';
+}
+function detail(book){
+  const cognitive=book[0]==='c';
+  app.innerHTML='<div class="narrow">'+crumbs(book)+'<h1>'+titles[book]+'</h1><p class="intro">'+(cognitive?'整卷依次练言语、数据和图形。每题限时 60、75 或 90 秒；到时按已选选项记入，未选计空题，自动进入下一题。':'整卷 40 分钟，两题共享时间，可往返修改。单题练习为 20 分钟，每题最多 500 字，交卷后对照要点自评。')+'</p><div class="panel modes">'+modesFor(book).map(mode=>{
+    const state=read(keyOf(book,mode)),n=itemsFor(book,mode).length;
+    const status=state?(state.done?'查看复盘':'续做 · 余 '+timeString(state.left)):'开始练习';
+    const label=mode==='all'?'整卷模拟':cognitive?sections[mode]:BANK[book][Number(mode)-1].title;
+    return '<button class="mode" type="button" data-open="'+mode+'"><span class="marker">'+(mode==='all'?'∑':cognitive?({v:'文',d:'数',f:'形'})[mode]:mode)+'</span><span class="details-col"><strong>'+label+'</strong><small>'+n+' 题 · '+(timeBudget(book,mode)/60000)+' 分钟</small></span><span class="badge">'+status+' ›</span></button>';
+  }).join('')+'</div><p class="help">整卷与分项使用同一批题，分别计时、分别存档。切到后台会自动暂停，重置只清除当前练习。</p></div>';
+}
+function review(s){
+  const qs=itemsFor(s.book,s.mode),cognitive=s.book[0]==='c';
+  const duration=timeBudget(s.book,s.mode)-s.left;
+  const answered=qs.filter(q=>cognitive?Number.isInteger(s.answers[q.id]):(s.answers[q.id]||'').trim()).length;
+  let inner='<div class="narrow">'+crumbs(s.book)+'<h1>练习复盘</h1><p class="intro">'+displayBook(s.book)+' · '+modeLabel(s.book,s.mode)+' · '+s.reason+' · 用时 '+timeString(duration)+'</p>';
+  if(cognitive){
+    const good=qs.filter(q=>q.correct===s.answers[q.id]).length;
+    inner+='<div class="cell-list"><span>答对 '+good+' / '+qs.length+'</span><span>答错 '+(answered-good)+'</span><span>未答 '+(qs.length-answered)+'</span></div><p class="help">'+Object.entries(sections).filter(([k])=>qs.some(q=>q.section===k)).map(([k,v])=>{const a=qs.filter(q=>q.section===k);return v+' '+a.filter(q=>s.answers[q.id]===q.correct).length+'/'+a.length;}).join('　')+'</p><div class="filters"><button class="btn" data-filter="all" aria-pressed="'+!filterErrors+'">全部题目</button><button class="btn" data-filter="errors" aria-pressed="'+filterErrors+'">错题与未答</button></div>';
+    if(good===qs.length&&filterErrors)inner+='<p>本次全部答对。</p>';
+    qs.forEach((q,i)=>{
+      const a=s.answers[q.id],correct=a===q.correct;
+      if(filterErrors&&correct)return;
+      inner+='<details class="review-row"><summary><span class="'+(correct?'ok':'wa')+'">'+(correct?'正确':a===undefined?'未答':'错题')+'</span>　'+(i+1)+'. '+sections[q.section]+' · '+escapeHTML(q.prompt)+'</summary><div class="review-body">'+stimulus(q)+optList(q,a,true)+'<p><strong>你的选项 '+(Number.isInteger(a)?letters[a]:'未答')+'　正确选项 '+letters[q.correct]+'</strong>'+(s.expired[q.id]?' · 单题到时':'')+'</p><p>'+escapeHTML(q.why)+'</p></div></details>';
+    });
+  }else{
+    inner+='<div class="cell-list"><span>已作答 '+answered+' / '+qs.length+'</span></div><p class="help">逐项核对并勾选你写到的内容，可接受有依据的其他决策。勾选仅用于自评。</p>';
+    qs.forEach((q,i)=>{
+      const text=s.answers[q.id]||'';
+      inner+='<details class="review-row" '+(qs.length===1?'open':'')+'><summary>第 '+(i+1)+' 题 · '+q.title+'</summary><div class="review-body">'+stimulus(q)+'<p><strong>'+q.prompt+'</strong></p><h3>你的作答 · '+Array.from(text).length+' 字</h3><p class="preserve passage">'+(text?escapeHTML(text):'未作答')+'</p><h3>对照要点</h3>'+q.criteria.map(([tag,body],j)=>'<label class="check"><input type="checkbox" data-check="'+q.id+'-'+j+'" '+(s.checks[q.id+'-'+j]?'checked':'')+'><span><strong>'+tag+'</strong>　'+body+'</span></label>').join('')+'<h3>一种参考答法</h3><p>'+q.sample+'</p><p class="help">容易漏写：'+q.miss+'</p></div></details>';
+    });
+  }
+  return inner+'<div class="actions"><a class="btn" href="#'+s.book+'">返回本卷</a><button class="btn danger" data-act="reset">重置本次练习</button></div></div>';
+}
+function renderSession(){
+  const s=current;if(!s)return;
+  if(s.done){app.innerHTML=review(s);return;}
+  const qs=itemsFor(s.book,s.mode),q=qs[s.pos],cognitive=s.book[0]==='c';
+  if(!running){
+    app.innerHTML='<div class="narrow">'+crumbs(s.book)+'<section class="panel pausebox"><h2>'+displayBook(s.book)+' · '+modeLabel(s.book,s.mode)+'</h2><p class="intro">'+(flash||'当前未计时，准备好后开始。')+'</p><div class="cell-list"><span>第 '+(s.pos+1)+' / '+qs.length+' 题</span><span>剩余 '+timeString(s.left)+'</span></div><div class="actions"><button class="pbtn" data-act="start">继续作答</button><a class="btn" href="#'+s.book+'">返回本卷</a></div><div class="actions"><button class="btn" data-act="submit">提前交卷看解析</button><button class="btn danger" data-act="reset">重置本次练习</button></div></section></div>';
+    return;
+  }
+  const answer=s.answers[q.id];
+  app.innerHTML='<div class="narrow"><div class="sbar"><strong class="session-head">'+displayBook(s.book)+'<br>'+modeLabel(s.book,s.mode)+'</strong><div class="timerbox"><div class="timegrp"><small>本场剩余</small><span class="timer" id="overall"></span></div>'+(cognitive?'<div class="timegrp"><small>本题剩余</small><span class="timer" id="itemtime"></span></div>':'')+'<button class="btn" data-act="pause">暂停</button></div></div><article class="paper"><div class="strip"><span>'+(cognitive?sections[q.section]:'书面简述')+'</span><span>第 '+(s.pos+1)+' / '+qs.length+' 题</span></div><div class="track"><i style="display:block;width:'+((s.pos+1)/qs.length*100)+'%"></i></div>'+(flash?'<p class="notice" role="status">'+escapeHTML(flash)+'</p>':'')+(cognitive?'':'<h2>'+q.title+'</h2>')+(q.frames?'<h3 class="qtitle">'+q.prompt+'</h3>'+stimulus(q):stimulus(q)+'<h3 class="qtitle">'+q.prompt+'</h3>')+(cognitive?optList(q,answer):'<label for="draft" class="savedraft">你的作答 · 自动保存</label><textarea id="draft" placeholder="写下决定、依据、执行安排和验证条件。">'+escapeHTML(answer||'')+'</textarea><div class="wcount" id="wcount">'+Array.from(answer||'').length+' / 500 字</div>')+'<div class="actions end">'+(cognitive?'<span class="help">确认后锁定本题</span><button class="pbtn" data-act="next">'+(s.pos+1===qs.length?'确认并交卷':Number.isInteger(answer)?'确认，下一题':'跳过本题')+'</button>':(s.pos?'<button class="btn" data-act="back">上一题</button>':'<span class="help">含标点和换行</span>')+'<button class="pbtn" data-act="next">'+(s.pos+1===qs.length?'交卷复盘':'保存，下一题')+'</button>')+'</div></article></div>';
+  showClock();
+}
+function saveDraft(textarea,limit){
+  if(!running||!current||!hasControl())return;
+  const q=itemsFor(current.book,current.mode)[current.pos];
+  let chars=Array.from(textarea.value);
+  if(limit&&chars.length>500){chars=chars.slice(0,500);textarea.value=chars.join('');}
+  current.answers[q.id]=textarea.value;
+  document.getElementById('wcount').textContent=chars.length+' / 500 字';
+  persist();
+}
+function reset(){
+  if(foreign(read(keyOf(current.book,current.mode)))){flash='请先在另一个标签页暂停本练习。';renderSession();return;}
+  if(!confirm('清除这份练习的答案、剩余时间和复盘记录？其他练习会保留。'))return;
+  const book=current.book,mode=current.mode;running=false;remove(keyOf(book,mode));current=null;location.hash=book;
+}
+function submit(){
+  if(foreign(read(keyOf(current.book,current.mode)))){flash='请先在另一个标签页暂停本练习。';renderSession();return;}
+  if(running)pause('等待交卷确认，计时已暂停。');
+  if(current.done)return;
+  const qs=itemsFor(current.book,current.mode);
+  const empty=qs.filter(q=>current.book[0]==='c'?!Number.isInteger(current.answers[q.id]):!(current.answers[q.id]||'').trim()).length;
+  if(!confirm((empty?'还有 '+empty+' 题未答。':'')+'交卷后将锁定答案，查看解析。确认交卷？')){flash='已取消交卷，点击继续作答。';renderSession();return;}
+  finish('主动交卷');
+}
+function route(){
+  if(running)pause('已保存并暂停。');
+  running=false;current=null;flash='';composing=false;filterErrors=false;
+  const route=location.hash.slice(1);
+  visibleRoute=route;
+  const [book,mode]=route.split('/');
+  if(!Object.hasOwn(titles,book)){home();}
+  else if(!modesFor(book).includes(mode)){detail(book);}
+  else{
+    current=read(keyOf(book,mode))||fresh(book,mode);
+    if(pendingStart===route && !current.done){pendingStart='';start();}
+    else renderSession();
+  }
+  pendingStart='';window.scrollTo(0,0);
+}
+app.addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.open){const book=visibleRoute.split('/')[0];pendingStart=book+'/'+b.dataset.open;location.hash=pendingStart;return;}
+  if(!current)return;
+  if(b.dataset.filter){filterErrors=b.dataset.filter==='errors';renderSession();return;}
+  const oldPos=current.pos;
+  if(running){tick();if(!running||!current||current.pos!==oldPos)return;}
+  if(b.dataset.choice!==undefined && running){
+    const qs=itemsFor(current.book,current.mode);current.answers[qs[current.pos].id]=Number(b.dataset.choice);
+    app.querySelectorAll('[data-choice]').forEach(el=>el.setAttribute('aria-pressed',String(el===b)));
+    app.querySelector('[data-act=next]').textContent=current.pos===qs.length-1?'确认并交卷':'确认，下一题';
+    persist();return;
+  }
+  const act=b.dataset.act;
+  if(act==='start'){start();return;}if(act==='pause'){pause();return;}if(act==='reset'){reset();return;}if(act==='submit'){submit();return;}
+  if(!running)return;
+  const qs=itemsFor(current.book,current.mode);
+  if(act==='back'&&current.book[0]==='m'&&current.pos>0){current.pos--;flash='';}
+  else if(act==='next'){
+    flash='';
+    if(current.book[0]==='c'){if(!markNext(false))return;}
+    else if(current.pos===qs.length-1){submit();return;}
+    else current.pos++;
+  }else return;
+  persist();renderSession();window.scrollTo(0,0);
+});
+app.addEventListener('compositionstart',()=>{composing=true;});
+app.addEventListener('compositionend',e=>{composing=false;if(e.target.id==='draft')saveDraft(e.target,true);});
+app.addEventListener('input',e=>{if(e.target.id==='draft')saveDraft(e.target,!composing);});
+app.addEventListener('change',e=>{
+  if(e.target.dataset.check && current?.done){
+    const saved=read(keyOf(current.book,current.mode));
+    if(!saved?.done)return;
+    current=saved;current.checks[e.target.dataset.check]=e.target.checked;persist();
+  }
+});
+window.addEventListener('hashchange',route);
+document.addEventListener('visibilitychange',()=>{if(document.hidden && running)pause('页面已切到后台，计时和作答均已保存。');});
+window.addEventListener('pagehide',()=>{if(running)pause('离开页面时已暂停。');});
+window.addEventListener('pageshow',e=>{if(e.persisted)route();});
+window.addEventListener('storage',e=>{
+  if(!e.key?.startsWith(prefix)||!current||e.key!==keyOf(current.book,current.mode))return;
+  const s=read(e.key);
+  if(running && s?.owner===tabId)return;
+  if(!running||!s||s.owner!==tabId){running=false;current=s||fresh(current.book,current.mode);flash=foreign(s)?'另一标签页正在作答。':'已读取最新存档。';renderSession();}
+});
+setInterval(tick,200);
+route();
+</script></body></html>
